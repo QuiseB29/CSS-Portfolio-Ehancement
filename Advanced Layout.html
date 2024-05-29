@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitlife User Registration</title>
+    <link rel="stylesheet" href="Advanced.css"> 
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Basic Information</legend>
+
+            <label for="full name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email", required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" name="date-of-birth" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Gender</legend>
+            
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">other</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+
+            </select>
+
+        </fieldset>
+        <fieldset>
+            <legend>Interest</legend>
+
+            <input type="radio" id="running" name="running" value="running"required>
+            <label for="running">Running</label>
+            
+            <input type="radio" id="yoga" name="yoga" value="yoga" required>
+            <label for="Yoga">Yoga</label>
+
+            <input type="radio" id="Weightlifing" name="Weightlifting" value="Weightlifting" required>
+            <label for="Weightlifting">Weightlifting</label>
+
+            <input type="radio" id="swimming" name="swimming" value="swimming" required>
+            <label for="swimming">Swimming</label>
+    
+
+        </fieldset>
+        <fieldset>
+            <legend>Fitness Goal</legend>
+
+            <label for="Choose your primary Fitness Goal"> Choose Fitness Goal:</label>
+            <select id="Choose" name="'Choose">
+                <option value="Lose Weight">Lose Weight</option>
+                <option value="Gain weight">Gain Weight</option>
+                <option value="Muscle Tone">Muscle Tone</option>
+
+            </select>
+
+            <button type="submit">Submit</button>
+
+
+
+        </fieldset>
+    </form>
+    <p>Read Our <a href="#">Privacy Policy</a></p>
+</body>
+</html>

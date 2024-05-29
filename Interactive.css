@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightsalmon;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+input,textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border-color: lightseagreen;
+    box-shadow: 0 0 8px royalblue(74, 144, 226, 0.5);
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: royalblue;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button.hover {
+    background-color: teal;
+}
+
+a:visited {
+    color:  purple
+}

@@ -1,0 +1,91 @@
+body {
+    background-color: peachpuff;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: royalblue(0,123,255,0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px black(0,0,0,0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+nav, section, article, aside {
+    padding: 20px;
+    margin: 10px;
+    background-color: white(255, 255, 255, 0.9);
+}
+
+nav, .main-content, aside {
+    flex: 1;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+footer  {
+    background-color: black(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid wheat;
+}
+
+th {
+    background-color: wheat(247, 247, 247, 0.8);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green(40, 167, 69, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.hover {
+    background-color: green(33, 136, 56, 0.8);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid grey(255, 255, 255, 0.8);
+}
+
+nav, footer {
+    background: linear-gradient(145deg, blue(0, 123, 255, 0.8), blue(107, 168, 229, 0.8));
+
+}
+
+.main-content, aside {
+    background: linear-gradient(145deg, white(225, 225, 225, 0.9), white(230, 230, 230, 0.9));
+}
+

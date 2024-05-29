@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - Community Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contact Community Helpers</h1>
+
+    <form action="/sumbit" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}">
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" cols="50" placeholder="Your message here" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div role="alert" aria-live="assertive" id="error-message">
+        Please fill out all required fields 
+    </div>
+</body>
+</html>
